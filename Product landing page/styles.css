@@ -1,0 +1,187 @@
+header {
+    margin-top: 80px;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fdf5df;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header-img{
+ 
+    height: 120px;
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin-top: 0;
+    background-color: #fdf5df;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    row-gap: 20px;
+}
+
+.logo > h1 {
+    padding: 50px;
+    font-size: 2rem;
+}
+
+.logo > img {
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto; /* Adjusted to maintain aspect ratio */
+}
+
+nav {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f7e1e1;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+}
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%; 
+}
+
+#submit {
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input,
+form > button {
+    height: 40px; 
+    width: 250px;
+    border-radius: 4px;
+    padding-top: 0;
+}
+
+form > button {
+    background-color: #FD7E14;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#Features {
+    margin-top: 100px;
+}
+
+#logos {
+    width: 40px;
+    height: 40px;
+}
+
+.details_of_products {
+    width: 700px;
+}
+
+.infoOnProducts {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin-top: 0;
+    padding-top: 0; 
+}
+
+#Pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+#Items {
+    margin-top: 20px;
+    border: solid 2px;
+    text-align: center;
+}
+
+
+#select{
+    margin-bottom: 20px;
+    background-color: yellow;
+    width: 100px;
+    height: 40px;
+}
+
+
+@media (max-width: 900px) {
+    #nav-bar > ul {
+        flex-direction: column; 
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        text-align: center; 
+    }
+
+    .logo {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    form {
+        width: 90%; 
+    }
+
+    #nav-bar > ul {
+        gap: 10px; /
+    }
+
+    #submit, form > button {
+        width: 100%; 
+    }
+}
